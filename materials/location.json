@@ -1,0 +1,163 @@
+{
+    {
+        "Country":{
+            [
+                "America":{
+                    [
+                        {
+                            "place":"USA - Chantilly",
+                            "address":"14150 Newbrook Drive Suite 115 Chantilly, VA 20151",
+                            "phoneNumber":"+1-571-281-3229",
+                            "location":"View Map",
+                            "locationImage":"officeImages/USAchantilly.png"
+                        },
+                        {
+                            "place":"Canada - Toronto",
+                            "address":"2425 Matheson Blvd East 8th Floor Mississauga, Toronto Ontario, L4W 5K4",
+                            "phoneNumber":"+1-905-361-6591",
+                            "location":"View Map",
+                            "locationImage":"officeImages/canada.png"
+                        },
+                        {
+                            "place":"USA - Stafford",
+                            "address":"920 FM 1092 # 201 Stafford, TX 77477",
+                            "phoneNumber":"+1-512-730-0443",
+                            "location":"View Map",
+                            "locationImage":"officeImages/USAstafford.png"
+                        }
+                    ]
+                    
+                },
+                "Europe":{
+                    [
+                        {
+                            "place":"UK - Salisbury",
+                            "address":"Nunns Orchard Dean Lane Whiteparish Salisbury, SP5 2RJ",
+                            "phoneNumber":"44-114-360-3250",
+                            "location":"View Map",
+                            "locationImage":"officeImages/UK.png"
+                        }
+                    ]
+                    
+                },
+                "middleEast":{
+                    [
+                        {
+                            "place":"UAE - Dubai",
+                            "address":"E3-308, Dubai Silicon Oasis Dubai",
+                            "phoneNumber":"+971-4371-2632",
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        }
+                    ]
+                    
+    
+                },
+                "southAsia":{
+                    [
+                        {
+                            "place":"India - Trivandrum",
+                            "address":"7th Floor, Ganga Phase III Campus, Technopark Trivandrum - 695583",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },
+                        {
+                            "place":"India - Chennai",
+                            "address":"3rd Floor, SM Towers, 2/88 OMR, Seevaram, Perungudi Chennai - 600096",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },
+                        {
+                            "place":"India - Noida",
+                            "address":"6th Floor, Tower B,A-8A, Knowledge Boulevard,
+                            Sector 62, Noida - 201301",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },
+                        {
+                            "place":"India - Bangalore",
+                            "address":"7th Floor, Fairway Business Park Near EGL, Domlur Bangalore - 560071",
+                            "phoneNumber":"+91-806-193-9353",
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },
+                        {
+                            "place":"India - Cochin",
+                            "address":"4th Floor, Tower B World Trade Center, Infopark Cochin - 682030",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },
+                        {
+                            "place":"India - Calicut",
+                            "address":"5th Floor UL Cyber Park Calicut - 673016",
+                            "phoneNumber":"View Map",
+                            "location":,
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },
+                        {
+                            "place":"India - Cochin",
+                            "address":"9th Floor, Lulu Cyber Tower Infopark Cochin - 682030",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        }
+                        {
+                            "place":"India - Trivandrum",
+                            "address":"4th Floor, Artech Magnet Vazhuthacaud Trivandrum - 695014",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },{
+                            "place":"India - Koratty",
+                            "address":"Nisagandhi, Infopark Koratty Trichur - 680308",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":"officeImages/UAEDubai.png"
+                        },
+                        
+                    ]
+                    
+                },
+                "EastAsia":{
+                    [
+                        {
+                            "place":"Japan - Tokyo",
+                            "address":"Toranomon Hills Business Tower 15F
+                            1-17-1 Toranomon
+                            Minato-ku, Tokyo 105-6415",
+                            "phoneNumber":"+81 70 4130 1686",
+                            "location":"View Map",
+                            "locationImage":
+                        },
+                        {
+                            "place":"Singapore - Singapore City",
+                            "address":"8 Temasek Boulevard #42-01, Suntec Tower Three Singapore 038988",
+                            "phoneNumber":" +65-9880-1029",
+                            "location":"View Map",
+                            "locationImage":
+                        },
+                    ]
+                    
+        
+                },"Oceania":{
+                    [
+                        {
+                            "place":"Australia - Sydney",
+                            "address":"Level 40, Northpoint Tower 100 Miller Street North Sydney NSW 2060",
+                            "phoneNumber":,
+                            "location":"View Map",
+                            "locationImage":
+                        }
+                    ]
+    
+                }
+            ]
+            
+        }
+    }
+}
+        
