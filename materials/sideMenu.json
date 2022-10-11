@@ -1,0 +1,117 @@
+[
+    {
+        "subMenu":"Overview",
+        "link":"https://www.qburst.com/company/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"About Qburst",
+        "link":"https://www.qburst.com/company/about/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"Leadership Team",
+        "link":"https://www.qburst.com/company/about/management/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"CLients",
+        "link":"https://www.qburst.com/clients/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"Partners",
+        "link":"https://www.qburst.com/company/partners/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"Corporate Resposibility",
+        "link":"https://csr.qburst.com/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"News",
+        "link":"https://news.qburst.com/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"Our Location",
+        "link":"https://www.qburst.com/company/contact/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"Privacy Policy",
+        "link":"https://www.qburst.com/privacypolicy/",
+        "mainmenu":"Company"
+    },
+    {
+        "subMenu":"Pay Your Invoice",
+        "link":"https://www.payumoney.com/paybypayumoney/#/84F0EDF595FC714C648493CB87879645",
+        "mainmenu":"Company"
+    },
+
+    {
+        "subMenu":"Overview",
+        "link":"https://www.qburst.com/approach/",
+        "mainmenu":"Approach"
+    },
+    {
+        "subMenu":"Architecture",
+        "link":"https://www.qburst.com/approach/architecture/",
+        "mainmenu":"Approach"
+    },
+    {
+        "subMenu":"Design",
+        "link":"https://www.qburst.com/approach/design/",
+        "mainmenu":"Approach"
+    },
+    {
+        "subMenu":"Development",
+        "link":"https://www.qburst.com/approach/development/",
+        "mainmenu":"Approach"
+    },
+    {
+        "subMenu":"Testing",
+        "link":"https://www.qburst.com/approach/testing/",
+        "mainmenu":"Approach"
+    },
+    {
+        "subMenu":"Tools & Lab",
+        "link":"https://www.qburst.com/approach/testing-tools-lab/",
+        "mainmenu":"Approach"
+    },
+    {
+        "subMenu":"Delivery Model",
+        "link":"https://www.qburst.com/approach/delivery/",
+        "mainmenu":"Approach"
+    },
+  
+    {
+        "subMenu":"Overview",
+        "link":"https://www.qburst.com/company/career/",
+        "mainmenu":"Careers"
+    },
+    {
+        "subMenu":"Open Positions",
+        "link":"https://www.qburst.com/company/career/openings/",
+        "mainmenu":"Careers"
+    },
+    {
+        "subMenu":"Entry-Level Opportunities",
+        "link":"https://www.qburst.com/company/career/entry-level-openings/",
+        "mainmenu":"Careers"
+    },
+    {
+        "subMenu":"Submit Resume",
+        "link":"https://www.qburst.com/company/career/apply/",
+        "mainmenu":"Careers"
+    },
+ 
+    {
+        "mainmenu":"Blog"
+    },
+  
+    {
+        "mainmenu":"Our Location"
+    }
+]

@@ -1,22 +1,20 @@
-{
-  "testimonials": [
+[
     {
-      "image": "images/sarah.jpg",
-      "name": "Sifat Hasan",
-      "designation": "Agen Founder",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,exflaborum quam "
+        "image": "images/sarah.jpg",
+        "name": "Sifat Hasan",
+        "designation": "Agen Founder",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,exflaborum quam "
     },
     {
-      "image": "images/sarah.jpg",
-      "name": "Sifat Hasan",
-      "designation": "Agen Founder",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,exflaborum quam "
+        "image": "images/sarah.jpg",
+        "name": "Sifat Hasan",
+        "designation": "Agen Founder",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,exflaborum quam "
     },
     {
-      "image": "images / sarah.jpg",
-      "name": "Sifat Hasan",
-      "designation": "Agen Founder",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,exflaborum quam "
+        "image": "images / sarah.jpg",
+        "name": "Sifat Hasan",
+        "designation": "Agen Founder",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,exflaborum quam "
     }
-  ]
-}
+]
