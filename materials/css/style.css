@@ -586,7 +586,45 @@ h6 {
     4. SKELETON
 .................................................*/
 /* HEADER SECTION*/
+/* Popup for hamburger menu */
 
+#outer_pop_up {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#pop_up {
+  background-color: red;
+  width: 25%;
+  height: 100vh;
+  position: relative;
+  /* z-index: 1; */
+  
+
+}
+li {
+  list-style: none;
+}
+.main_li {
+  padding-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d093e;
+}
+.sub_li li {
+  padding: 0px 0px 30px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #323232;
+}
+#close_button{
+  font-size: 2em;
+  font-weight: 600;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+/* Popup styling ends */
 #outer_header_container {
   width: 100%;
   background-color: #fceddf;
@@ -607,7 +645,7 @@ h6 {
   justify-content: space-between;
 }
 #ham_menu {
-  display: none;
+  display: block;
 }
 /* Doubt Begins */
 #nav_li {
