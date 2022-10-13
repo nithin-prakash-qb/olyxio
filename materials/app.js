@@ -24,27 +24,39 @@ const getData = async () => {
                           </div>`;
         parent.appendChild(div1);
       });
+      // Hamberger
+      hamMenu = document.getElementById("ham_menu");
+      hamMenu.addEventListener("click", () => {
+        document.getElementById("pop_up").style.display = "block";
+        // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      });
+      //Close Button
+      close_button = document.getElementById("close_button");
+      close_button.addEventListener("click", () => {
+        document.getElementById("pop_up").style.display = "none";
+      });
+      //Arrow Down
+
+      // Main li
+      let sideMenu=data["sideMenu"]
+      sideMenu.forEach((testObj) => {
+        let parent=document.getElementById("main_u_li")
+        let pop_up = document.createElement("li");
+        pop_up.setAttribute("class", "main_li");
+        pop_up.innerHTML=`${testObj.mainmenu}<i class="fa-solid fa-circle-chevron-down" ></i>`
+        
+          testObj["subMenu"].forEach(x => {
+            let listItemParent = document.getElementsByClassName('sub_li')[0]
+            let listItemChild = document.createElement("li")
+            listItemChild.innerHTML=`${Object.keys(x)[0]}`
+            pop_up.appendChild(listItemChild)
+          })
+        parent.appendChild(pop_up)
+       }
+      )
+      
     });
-
 };
-getData()
+getData();
 
-// let parent = document.getElementById("testimonials");
-// let div1 = document.createElement("div");
-// div1.setAttribute("class", "testi");
-// let div2 = document.createElement("div");
-// div2.setAttribute("class", "testi_image_designation");
-// div2.innerHTML = `<div> <img src="" alt="" /> </div>
-//                 <h4 class="image_name"></h4>
-//                 <p class="image_designation"></p>`;
-// parent.appendChild(div1);
-// div1.appendChild(div2)
-
-// Hamberger
-hamMenu = document.getElementById('ham_menu')
-hamMenu.addEventListener("click",()=>{
-    let div1 = document.createElement("div");
-    
-    
-});
 

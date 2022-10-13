@@ -591,13 +591,21 @@ h6 {
 #outer_pop_up {
   display: flex;
   flex-direction: row-reverse;
+  /* overflow-y: scroll; */
+  
 }
 #pop_up {
-  background-color: red;
-  width: 25%;
-  height: 100vh;
-  position: relative;
-  /* z-index: 1; */
+  background-color: white;
+  width: 23%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  overflow-y: scroll; 
+  display: none;
+  padding-top: 89px;
+  padding-left: 43px;
+  /* height: 100vh; */
+  /* transition: 0.5s; */
   
 
 }
@@ -609,19 +617,21 @@ li {
   font-size: 28px;
   font-weight: 700;
   color: #0d093e;
+  /* transition: 0.3s; */
 }
 .sub_li li {
   padding: 0px 0px 30px 20px;
   font-size: 18px;
   font-weight: 500;
   color: #323232;
+  /* display: none; */
 }
 #close_button{
   font-size: 2em;
   font-weight: 600;
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: 24px;
+  top: 17px;
 }
 
 /* Popup styling ends */
@@ -650,6 +660,7 @@ li {
 /* Doubt Begins */
 #nav_li {
   display: flex;
+  display: none;
 }
 #nav_li li {
   padding: 10px;
@@ -686,6 +697,7 @@ li {
 .free_trial_button {
   border: 1px solid #e7a136;
   background-color: #fceddf;
+  display: none;
 }
 /* Navigation ends */
 #header_content_image {
