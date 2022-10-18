@@ -606,9 +606,8 @@ h6 {
   padding-left: 43px;
   /* height: 100vh; */
   /* transition: 0.5s; */
-  
-
 }
+
 li {
   list-style: none;
 }
@@ -625,23 +624,22 @@ li {
 .hiddens{
   display: none;
 }
-.sub_li li {
+.sub_li li{
   padding: 21px 0px 0px 19px;
+}
+.sub_li li a{
   font-size: 18px;
   font-weight: 500;
   color: #323232;
-  cursor: pointer; 
-  /* display: none; */
   
 }
-.sub_li li:hover {
-  padding: 21px 0px 0px 19px;
+.sub_li li a:hover {
   font-size: 18px;
   font-weight: 700;
   color:  #0d093e;
-  cursor: pointer; 
  
 }
+
 #close_button{
   font-size: 2em;
   font-weight: 600;
