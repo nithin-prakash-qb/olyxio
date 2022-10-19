@@ -604,23 +604,24 @@ h6 {
   display: none;
   padding-top: 89px;
   padding-left: 43px;
-  /* height: 100vh; */
-  /* transition: 0.5s; */
 }
 
 li {
   list-style: none;
 }
-.main_li {
+.main_li  {
   padding-bottom: 40px;
   font-size: 28px;
   font-weight: 700;
   color: #0d093e;
-  /* transition: 0.3s; */
 }
-/* .sub_li{
-  display: none; 
-} */
+.main_li a {
+  color: #0d093e;
+}
+.main_li a:visited {
+  color: #0d093e;
+}
+
 .hiddens{
   display: none;
 }
@@ -639,7 +640,6 @@ li {
   color:  #0d093e;
  
 }
-
 #close_button{
   font-size: 2em;
   font-weight: 600;
@@ -667,7 +667,6 @@ li {
   margin: 0 auto;
   padding-top: 20px;
   background-color: #fceddf;
-
   /* border: 2px solid green; */
 }
 /* Navigation Begins */

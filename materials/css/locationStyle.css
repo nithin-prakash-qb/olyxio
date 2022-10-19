@@ -96,19 +96,19 @@ article > div{
     flex-direction: column;
     width: 50%;
     padding: 9px 13px 52px 20px;
-    display: none;
+    display: block;
     height: 248px
 }
-.USA_container{
+/* .Oceania_container{
     display: block;
+} */
+p i{
+    padding-right: 10px;
 }
 
-p{
-    /* margin-top: 10px; */
-}
 h3{
     margin: 10px 0px 0px 0px;
-    font-family: 'Montserrat',sans-serif;
+    color: #0d093e;
 }
 .para{
     font-family: 'Montserrat',sans-serif;
@@ -117,18 +117,23 @@ h3{
     font-size: 16px;
     font-weight: 400;
     margin: 10px 0px 0px 0px;
+    letter-spacing: 5px;
+    letter-spacing: .8px;
 }
 .phone{
     font-family: 'Montserrat',sans-serif;
     font-size: 17px;
     font-weight: 600;
-    margin: 10px 0px 0px 0px;
+    margin: 14px 0px 0px 0px;
+    color: #0d093e;
+    
 }
 .map{
     font-family: 'Montserrat',sans-serif;
     color: #000;
     cursor: pointer;
-    margin: 10px 0px 0px 0px;
+    margin: 18px 0px 0px 0px;
+    letter-spacing: .8px;
 }
 aside{
     width: 50%;
