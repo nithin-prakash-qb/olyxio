@@ -41,10 +41,9 @@ nav ul li:nth-child(7) {
     font-size: 2rem;
 }
 /* Main Section */
-main{
+#country_header{
     width: 80%;
     margin: 0 auto;
-    
 }
 h1{
     text-align: center;
@@ -52,12 +51,14 @@ h1{
     font-family: 'Montserrat',sans-serif;
     font-weight: 800;
     padding-bottom:40px ;
+    font-size: 40px;
+    margin: 0px;
 }
 ul{
     display: flex;
     padding: 0px;  
 }
-main ul li{
+#country_header ul li{
     list-style: none;
     /* font-size: 20px; */
     /* padding: 11px 53px 11px 52px; */
@@ -67,7 +68,7 @@ main ul li{
     /* text-decoration: none; */
     /* vertical-align: middle; */
 }
-main button{
+#country_header button{
     font-family: 'Montserrat',sans-serif;
     padding: 11px 31px 11px 44px;
     border: none;
@@ -76,6 +77,10 @@ main button{
     color: #0d093e;
     background-color: #f7f7f7;
     
+}
+#main{
+    width: 80%;
+    margin: 0 auto;
 }
 #content{
     display: flex;

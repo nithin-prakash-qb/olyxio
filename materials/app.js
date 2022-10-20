@@ -114,7 +114,8 @@ const getDataLocation = () => {
       return res.json();
     })
     .then((data) => {
-      header_fn(data)
+      countries(data)
+      localStorage.setItem("locationData", JSON.stringify(data));
     });
     
 
@@ -122,67 +123,85 @@ const getDataLocation = () => {
 
 getDataLocation();
 
-// function for getting the header contents
-let header_fn = (data)=>{
-  let main = document.getElementById("main");
+// function for getting all the countries in the header
+let countries = (data)=>{
+  let country_header= document.getElementById("country_header")
+  let H1=document.createElement("h1")
+  H1.innerHTML="WHERE WE ARE"
+  country_header.appendChild(H1)
+  // H1.setAttribute("id")
   let heading_un_li = document.createElement("ul");
+  let initialData=data.find((location)=>location.unique_id==="c4")
   data.forEach((testObj) => {
     let heading_list_item = document.createElement("li");
     let heading_button = document.createElement("button");
-    heading_button .setAttribute("onclick",callButtonFunction);
-    heading_button .onclick= ()=> callButtonFunction(data);
+    heading_button .setAttribute("onclick",button_fn);
+    heading_button .onclick= ()=> button_fn(data);
     heading_button.innerHTML=`${testObj.country}`;
     heading_list_item.appendChild(heading_button)
     heading_un_li.appendChild(heading_list_item)
   });
-  main.appendChild(heading_un_li)
+  country_header.appendChild(heading_un_li)
+  eachCountry(initialData)
 }
 
-function callButtonFunction(data){
-  if(event.target.innerHTML==="America"){
-    eachCountry(data)
-  }else if(event.target.innerHTML==="Europe"){
-    eachCountry(data)
-  }else if(event.target.innerHTML==="Middle East"){
-    eachCountry(data)
-  }else if(event.target.innerHTML==="South Asia"){
-    eachCountry(data)
-  }else if(event.target.innerHTML==="East Asia"){
-    eachCountry(data)
-  }else if(event.target.innerHTML==="Oceania"){
-    eachCountry(data)
-  }
+
+function button_fn(data){
+  data.forEach((test_obj)=>{
+    if(test_obj.country===event.target.innerHTML){
+      eachCountry(test_obj)
+    }
+  })
 }
 
-// function eachCountry(data){
-//   let main = document.getElementById("main");
-//   let section = document.createElement("section");
-//   section.setAttribute("id", "content");
-//   let article = document.createElement("article");
-//   data.forEach((testObj)=>{
-//     if(testObj.country===event.target.innerHTML){
-//       testObj.location.forEach((x)=>{
-//         let div1=document.createElement("div");
-//         div1.className = "USA_container common_container";
-//         article.appendChild(div1)
-//         let div1_h3=document.createElement("h3");
-//         div1_h3.innerHTML=`${x.place}`
-//         div1.appendChild(div1_h3)
-//         Object.keys(x.address).forEach((y)=>{
-//           let div1_p1=document.createElement("p");
-//           div1_p1.innerHTML=`${x.address[y]}`
-//           div1.appendChild(div1_p1)
-//         })
-//         let div1_p2=document.createElement("p");
-//         div1_p2.innerHTML=`<i class="fa-sharp fa-solid fa-phone"></i> ${x.phoneNumber}`
-//         div1.appendChild(div1_p2)
-//         let div1_p3=document.createElement("p");
-//         div1_p3.innerHTML=`<i class="fa-solid fa-location-dot"> ${x.location}`
-//         div1.appendChild(div1_p3)
-//       })
-//     }
-//   })
-//   section.appendChild(article)
-//   main.appendChild(section)
-//   let aside = document.createElement("aside")
-// } 
+function eachCountry(data_object){
+  let main= document.getElementById("main");
+  let section = document.createElement("section");
+  section.setAttribute("id", "content");
+  let article = document.createElement("article");
+  article.setAttribute("class","article")
+      data_object.location.forEach((x)=>{
+        let div1=document.createElement("div");
+        div1.setAttribute("onmouseover","mouse_fn(this)")
+        // div1.onmouseover= ()=> mouse_fn();
+        div1.className = "USA_container common_container";
+        let div1_h3=document.createElement("h3");
+        div1_h3.innerHTML=`${x.place}`
+        div1.appendChild(div1_h3)
+        Object.keys(x.address).forEach((y)=>{
+          let div1_p1=document.createElement("p");
+          div1_p1.innerHTML=`${x.address[y]}`
+          div1.appendChild(div1_p1)
+        })
+        let div1_p2=document.createElement("p");
+        div1_p2.setAttribute('class',"phone")
+        if(x.hasOwnProperty("phoneNumber")){
+          div1_p2.innerHTML=`<i class="fa-sharp fa-solid fa-phone"></i> ${x.phoneNumber}`
+          div1.appendChild(div1_p2)
+        }
+        
+        let div1_p3=document.createElement("p");
+        div1_p3.setAttribute('class',"map")
+        div1_p3.innerHTML=`<i class="fa-solid fa-location-dot"> ${x.location}`
+        div1.appendChild(div1_p3)
+        article.appendChild(div1)
+      })
+  
+  section.appendChild(article)
+  main.replaceChildren(section)
+  
+} 
+// let image = document.createElement('img')
+// image.src="officeImages/USAchantilly.png"
+// let aside = document.createElement("aside")
+// aside.appendChild(image)
+// section.appendChild(aside)
+// main.appendChild(section)
+let mouse_fn=(div1)=>{
+  // const location = JSON.parse(localStorage.getItem("locationData"));
+  let aside = document.createElement("aside")
+  let image = document.createElement('img')
+  image.src=div1.locationImage
+  aside.replaceChildren(image)
+
+}

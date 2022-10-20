@@ -1,4 +1,5 @@
 [{"country":"America",
+"unique_id":"c1",
   "location":[
         {
             "countryName": "America",
@@ -42,6 +43,7 @@
     ]   
 },{
     "country":"Europe",
+    "unique_id":"c2",
     "location":[
         {
             "countryName": "Europe",
@@ -61,6 +63,7 @@
 
 },{
     "country": "Middle East",
+    "unique_id":"c3",
     "location":[
         {
             "countryName": "middleEast",
@@ -76,6 +79,7 @@
     ]
 },{
     "country": "South Asia",
+    "unique_id":"c4",
     "location":[
         {
             "countryName": "southAsia",
@@ -176,7 +180,7 @@
             "address": {
                 "addressLine1": "Nisagandhi, Infopark",
                 "addressLine2": "Koratty",
-                "addressLine3": "Trichur - 680308r"
+                "addressLine3": "Trichur - 680308"
             },
             "location": "View Map",
             "locationImage": "officeImages/koratty.png"
@@ -184,6 +188,7 @@
     ]
 },{
     "country": "East Asia",
+    "unique_id":"c5",
     "location":[
         {
             "countryName": "EastAsia",
@@ -213,6 +218,7 @@
     ]
 },{
     "country": "Oceania",
+    "unique_id":"c6",
     "location":[
         {
             "countryName": "Oceania",
