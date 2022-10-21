@@ -129,7 +129,6 @@ let countries = (data)=>{
   let H1=document.createElement("h1")
   H1.innerHTML="WHERE WE ARE"
   country_header.appendChild(H1)
-  // H1.setAttribute("id")
   let heading_un_li = document.createElement("ul");
   let initialData=data.find((location)=>location.unique_id==="c4")
   data.forEach((testObj) => {
@@ -143,28 +142,42 @@ let countries = (data)=>{
   });
   country_header.appendChild(heading_un_li)
   eachCountry(initialData)
+  initial_image_fn_new(data)
 }
 
-
+//   function for button
 function button_fn(data){
+  // console.log(event.target)
   data.forEach((test_obj)=>{
     if(test_obj.country===event.target.innerHTML){
       eachCountry(test_obj)
+      event.target.setAttribute("data-office_initial_img",`${test_obj.location[0].locationImage}`)
+      initial_image_fn(event.target)
     }
   })
 }
 
 function eachCountry(data_object){
   let main= document.getElementById("main");
-  let section = document.createElement("section");
-  section.setAttribute("id", "content");
-  let article = document.createElement("article");
-  article.setAttribute("class","article")
-      data_object.location.forEach((x)=>{
+  let continent = document.createElement("section");
+  continent.setAttribute("id", "continent");
+  let all_places = document.createElement("section");
+  all_places.setAttribute("id","all_places")
+  all_places.setAttribute("onmouseout","mouse_fn_out_new()")
+  let all_places_image = document.createElement("section");
+  
+  all_places_image.setAttribute("id","all_places_image")
+      data_object.location.forEach((x,index)=>{
         let div1=document.createElement("div");
-        div1.setAttribute("onmouseover","mouse_fn(this)")
+        // if(index===0){
+        //   div1.style.border="1px dashed rgb(226, 41, 47)"
+        //   div1.style.borderRadius= "10px";
+        // }
+        div1.setAttribute("onmouseover","mouse_fn_over(this)")
+        div1.setAttribute("onmouseout","mouse_fn_out(this)")
+        div1.setAttribute("data-officeimg",`${x.locationImage}`)
         // div1.onmouseover= ()=> mouse_fn();
-        div1.className = "USA_container common_container";
+        div1.className = "common_container";
         let div1_h3=document.createElement("h3");
         div1_h3.innerHTML=`${x.place}`
         div1.appendChild(div1_h3)
@@ -179,29 +192,51 @@ function eachCountry(data_object){
           div1_p2.innerHTML=`<i class="fa-sharp fa-solid fa-phone"></i> ${x.phoneNumber}`
           div1.appendChild(div1_p2)
         }
-        
         let div1_p3=document.createElement("p");
         div1_p3.setAttribute('class',"map")
         div1_p3.innerHTML=`<i class="fa-solid fa-location-dot"> ${x.location}`
         div1.appendChild(div1_p3)
-        article.appendChild(div1)
+        all_places.appendChild(div1)
       })
   
-  section.appendChild(article)
-  main.replaceChildren(section)
-  
+      continent.appendChild(all_places)
+      main.replaceChildren(continent)
+      continent.appendChild(all_places_image)
 } 
-// let image = document.createElement('img')
-// image.src="officeImages/USAchantilly.png"
-// let aside = document.createElement("aside")
-// aside.appendChild(image)
-// section.appendChild(aside)
-// main.appendChild(section)
-let mouse_fn=(div1)=>{
+// MouseOver fn
+let mouse_fn_over=(div1)=>{
   // const location = JSON.parse(localStorage.getItem("locationData"));
-  let aside = document.createElement("aside")
+  div1.style.border="1px dashed rgb(226, 41, 47)"
+  div1.style.borderRadius= "10px";
   let image = document.createElement('img')
-  image.src=div1.locationImage
-  aside.replaceChildren(image)
+  image.src=div1.dataset.officeimg
+  all_places_image.replaceChildren(image)
+}
+//   MouseOut fn
+let mouse_fn_out=(div1)=>{
+  div1.style.border="none"
+}
+//   MouseOut fn new
+let mouse_fn_out_new=()=>{
+  let image = document.createElement('img')
+  let a = document.getElementById("all_places")
+  image.src=a.getElementsByClassName("common_container")[0].dataset.officeimg
+  all_places_image.replaceChildren(image)
+}
+//Initial Image loading fn
+let initial_image_fn=(e)=>{
+  let image = document.createElement('img')
+  image.src=e.dataset.office_initial_img
+  all_places_image.replaceChildren(image)
+}
+
+let initial_image_fn_new=(data)=>{
+  data.forEach((x)=>{
+    if(x.unique_id==="c4"){
+      let image = document.createElement('img')
+      image.src=x.location[0].locationImage
+      all_places_image.replaceChildren(image)
+    }
+  })
 
 }
